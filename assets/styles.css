@@ -1,0 +1,6 @@
+/* Custrom styles for hero title */
+.hero-custom-title .hero-title {
+  line-height: 57.6px;
+  letter-spacing: -1.28px;
+  margin: 0;
+}

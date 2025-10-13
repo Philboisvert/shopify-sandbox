@@ -1,0 +1,109 @@
+{% render 'hero-title'
+  , block: block %}
+
+{% schema %}
+  {
+    "name": "Hero Title",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title_1",
+        "label": "First title"
+      },
+      {
+        "type": "color",
+        "id": "title_color_1",
+        "label": "First title color",
+        "default": "#000000",
+        "alpha": false
+      },
+      {
+        "type": "text",
+        "id": "title_2",
+        "label": "Second title (optional)"
+      },
+      {
+        "type": "color",
+        "id": "title_color_2",
+        "label": "Second title color",
+        "default": "#000000",
+        "alpha": false
+      }, {
+        "type": "select",
+        "id": "font_size",
+        "label": "Font size (default for both)",
+        "options": [
+          {
+            "value": "0.875rem",
+            "label": "14px"
+          },
+          {
+            "value": "1rem",
+            "label": "16px"
+          },
+          {
+            "value": "1.25rem",
+            "label": "20px"
+          },
+          {
+            "value": "1.5rem",
+            "label": "24px"
+          }, {
+            "value": "2rem",
+            "label": "32px"
+          }, {
+            "value": "2.5rem",
+            "label": "40px"
+          }, {
+            "value": "3rem",
+            "label": "48px"
+          }, {
+            "value": "4rem",
+            "label": "64px"
+          }
+        ],
+        "default": "4rem"
+      }, {
+        "type": "select",
+        "id": "font_weight",
+        "label": "Font weight (default for both)",
+        "options": [
+          {
+            "value": "300",
+            "label": "Light"
+          },
+          {
+            "value": "400",
+            "label": "Regular"
+          },
+          {
+            "value": "500",
+            "label": "Medium"
+          },
+          {
+            "value": "600",
+            "label": "Semi-bold"
+          }, {
+            "value": "700",
+            "label": "Bold"
+          }
+        ],
+        "default": "700"
+      }
+
+    ],
+    "presets": [
+      {
+        "name": "Hero Title",
+        "settings": {
+          "title_1": "Hero",
+          "title_color_1": "#FFFFFF",
+          "title_2": "Title",
+          "title_color_2": "#DAF97C",
+          "font_size": "2.5rem",
+          "font_weight": "700"
+        }
+      }
+    ]
+  }
+{% endschema %}
