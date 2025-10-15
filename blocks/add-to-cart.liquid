@@ -6,6 +6,7 @@
 
   @param {string} can_add_to_cart - Whether the product can be added to the cart
   @param {string} add_to_cart_text - The text of the add to cart button
+  @param {boolean} showIcon - boolean value wheter to show icon or not
 {%- enddoc -%}
 
 {% liquid
@@ -22,7 +23,8 @@
     class: class,
     can_add_to_cart: can_add_to_cart,
     product: closest.product,
-    add_to_cart_text: add_to_cart_text
+    add_to_cart_text: add_to_cart_text,
+    showIcon: showIcon
   %}
 </span>
 

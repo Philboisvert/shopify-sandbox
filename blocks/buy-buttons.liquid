@@ -77,7 +77,8 @@
             type: 'add-to-cart',
             id: 'add-to-cart',
             can_add_to_cart: can_add_to_cart,
-            add_to_cart_text: add_to_cart_text
+            add_to_cart_text: add_to_cart_text,
+            showIcon: block.settings.showIcon
           %}
           {%- unless block_settings.gift_card_form and product.gift_card? -%}
             <span
@@ -386,6 +387,12 @@
   "name": "t:names.product_buy_buttons",
   "tag": null,
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "showIcon",
+      "label": "Show cart icon",
+      "default": true
+    },
     {
       "type": "paragraph",
       "content": "t:content.resource_reference_product"
