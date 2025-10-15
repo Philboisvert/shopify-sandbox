@@ -8,7 +8,13 @@
   {% content_for 'blocks', closest.product: product %}
 {% endcapture %}
 
-{% render 'product-card', children: children, product: product %}
+{% if block.settings.variant_card == true -%}
+  {% render 'product-card-custom', children: children, product: product %}
+{%- else -%}
+  {% render 'product-card', children: children, product: product %}
+{%- endif -%}
+
+
 
 {% schema %}
 {
@@ -63,6 +69,12 @@
       "step": 1,
       "unit": "px",
       "default": 16
+    },
+      {
+      "type": "checkbox",
+      "id": "variant_card",
+      "label": "Second style card",
+      "default": false
     },
     {
       "type": "checkbox",

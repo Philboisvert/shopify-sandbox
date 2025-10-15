@@ -11,6 +11,14 @@
 *
 */
 
+/* card */
+
+.product-custom-card {
+  background-color: #f5f5f5;
+  padding-bottom: 24px;
+  border-radius: 16px;
+}
+
 /* price */
 .compare_price {
   color: #ef4444;

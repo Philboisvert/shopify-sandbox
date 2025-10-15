@@ -234,6 +234,7 @@
           "static": true,
           "settings": {
             "product_card_gap": 0,
+            "variant_card": true,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "border": "none",
@@ -335,8 +336,8 @@
                 "gift_card_form": true,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
               },
               "blocks": {
                 "quantity": {
