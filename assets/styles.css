@@ -1,6 +1,20 @@
-/* Custrom styles for hero title */
+/* Hero banner's title */
 .hero-custom-title .hero-title {
   line-height: 57.6px;
   letter-spacing: -1.28px;
   margin: 0;
+}
+
+/* Product price */
+.compare_price {
+  color: #ef4444;
+}
+
+.compare-at-price {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.priceContainer .group .compare-at-price {
+  padding-left: 17px;
 }
