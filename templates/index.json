@@ -334,7 +334,7 @@
                 "stacking": false,
                 "show_pickup_availability": false,
                 "gift_card_form": true,
-                "padding-block-start": 0,
+                "padding-block-start": 29,
                 "padding-block-end": 0,
                 "padding-inline-start": 24,
                 "padding-inline-end": 24
@@ -384,16 +384,16 @@
         "columns": 3,
         "mobile_columns": "1",
         "mobile_card_size": "60cqw",
-        "columns_gap": 8,
-        "rows_gap": 24,
+        "columns_gap": 20,
+        "rows_gap": 0,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
-        "gap": 28,
+        "gap": 0,
         "color_scheme": "scheme-1",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     }
   },

@@ -17,6 +17,8 @@
   background-color: #f5f5f5;
   padding-bottom: 24px;
   border-radius: 16px;
+  height: 100%;
+  overflow: hidden;
 }
 
 /* price */
