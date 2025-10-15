@@ -6,12 +6,16 @@
   {% render 'text', fallback_text: product_title, block: block %}
 {% elsif closest.product != blank %}
   {% assign product_title = '<p>' | append: closest.product.title | append: '</p>' %}
+  {% if block.settings.showSku %}
+    {% assign product_sku = closest.product.selected_or_first_available_variant.sku %}
+  {% endif %}
   <a
     class="contents user-select-text"
     ref="productTitleLink"
     href="{% render 'product-card-variant-url', product: closest.product %}"
   >
-    {% render 'text', fallback_text: product_title, block: block %}
+
+    {% render 'text', fallback_text: product_title, product_sku: product_sku block: block %}
   </a>
 {% endif %}
 
@@ -27,6 +31,12 @@
     {
       "type": "header",
       "content": "t:content.layout"
+    },
+     {
+      "type": "checkbox",
+      "id": "showSku",
+      "label": "Show product SKU",
+      "default": false
     },
     {
       "type": "select",

@@ -3,6 +3,7 @@
 
   @param {string} [class] - custom class to define in addition to text-block classes
   @param {string} [fallback_text] - fallback text if settings.text does not exist
+  @param {string} [product_sku] - product sku
   @param {object} [block] - The block object
   @param {string} [width] - width of the text block
 {%- enddoc -%}
@@ -81,9 +82,18 @@
   endif
 %}
 
-{% if fallback_text != blank and plain_text == blank %}
+{% if fallback_text != blank and plain_text == blank and product_sku == blank  %}
   <div {{ attributes }}>
     {{ fallback_text }}
+  </div>
+{% elsif fallback_text != blank and product_sku != blank  %} 
+  <div {{ attributes }}>
+    <div class="product-title-with-sku">
+        {{ fallback_text }}
+    </div>
+    <div class="product-sku">
+      {{ product_sku }}
+    </div>
   </div>
 {% elsif plain_text != blank %}
   <{{ element }} {{ attributes }}>

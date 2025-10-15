@@ -5,9 +5,10 @@
   margin: 0;
 }
 
-/* Product price */
+/* Product price & sku */
 .compare_price {
   color: #ef4444;
+  padding-right: 17px;
 }
 
 .compare-at-price {
@@ -15,6 +16,12 @@
   font-weight: 400;
 }
 
-.priceContainer .group .compare-at-price {
-  padding-left: 17px;
+.product-sku {
+  font-size: 14px;
+  font-weight: 600;
+  color: #a2a2a2;
+}
+
+.product-title-with-sku {
+  margin-bottom: 4px;
 }
