@@ -233,7 +233,7 @@
           "name": "t:names.product_card",
           "static": true,
           "settings": {
-            "product_card_gap": 4,
+            "product_card_gap": 0,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "border": "none",
@@ -256,7 +256,7 @@
                 "border_opacity": 100,
                 "border_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 0,
+                "padding-block-end": 24,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
@@ -269,7 +269,7 @@
                 "product_swatches_alignment": "flex-start",
                 "product_swatches_alignment_mobile": "flex-start",
                 "hide_padding": false,
-                "product_swatches_padding_top": 24,
+                "product_swatches_padding_top": 0,
                 "product_swatches_padding_bottom": 17,
                 "product_swatches_padding_left": 24,
                 "product_swatches_padding_right": 0
