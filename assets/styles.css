@@ -5,7 +5,13 @@
   margin: 0;
 }
 
-/* Product price & sku */
+/*
+*
+** Product card start
+*
+*/
+
+/* price */
 .compare_price {
   color: #ef4444;
   padding-right: 17px;
@@ -20,7 +26,7 @@
   display: flex;
 }
 
-/* Product title/sku */
+/* Product title & sku */
 .product-card-sku {
   font-size: 14px;
   font-weight: 600;
@@ -32,3 +38,16 @@
 .product-title-with-sku {
   margin-bottom: 4px;
 }
+
+/* tags */
+.product-card-sale-tag {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/*
+*
+** Product card end
+*
+*/

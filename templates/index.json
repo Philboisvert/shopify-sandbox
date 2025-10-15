@@ -329,6 +329,7 @@
               "type": "buy-buttons",
               "name": "t:names.product_buy_buttons",
               "settings": {
+                "showIcon": false,
                 "stacking": false,
                 "show_pickup_availability": false,
                 "gift_card_form": true,
