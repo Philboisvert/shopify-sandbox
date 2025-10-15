@@ -144,8 +144,22 @@
         "section_width": "page-width",
         "gap": 20,
         "color_scheme": "scheme-6",
-        "padding-block-start": 30,
-        "padding-block-end": 30
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "divider_wqpJT4": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "scheme-6",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "footer_utilities_jLGE8U": {
@@ -155,7 +169,9 @@
           "type": "footer-copyright",
           "settings": {
             "show_powered_by": false,
-            "font_size": "0.75rem",
+            "font_size": "0.875rem",
+            "use_custom_text": true,
+            "footer_copyright_custom_text": "© 2025 Apex Gear. All rights reserved.",
             "case": "none"
           },
           "blocks": {}
@@ -167,7 +183,7 @@
       "name": "t:names.utilities",
       "settings": {
         "section_width": "page-width",
-        "gap": 24,
+        "gap": 0,
         "divider_thickness": 0,
         "color_scheme": "scheme-6",
         "padding-block-start": 30,
@@ -177,6 +193,7 @@
   },
   "order": [
     "footer_m9NzUG",
+    "divider_wqpJT4",
     "footer_utilities_jLGE8U"
   ]
 }

@@ -11,10 +11,15 @@
   {{ block.shopify_attributes }}
 >
   <span class="footer-utilities__text">
-    &copy; {{ 'now' | date: '%Y' }}
-    {{ shop.name | link_to: routes.root_url -}}
-    {%- if block_settings.show_powered_by -%}
-      , {{ powered_by_link }}
+    <!--I'm aware I could've of just change the store name -->
+    {%- if block_settings.use_custom_text == true -%}
+      {{ block_settings.footer_copyright_custom_text | link_to: routes.root_url -}}
+    {%- else  -%}
+      &copy; {{ 'now' | date: '%Y' }}
+      {{ shop.name | link_to: routes.root_url -}}
+      {%- if block_settings.show_powered_by -%}
+        , {{ powered_by_link }}
+      {%- endif -%}
     {%- endif -%}
   </span>
 </div>
@@ -61,6 +66,18 @@
         }
       ],
       "default": "0.75rem"
+    },
+      {
+    "type": "checkbox",
+    "id": "use_custom_text",
+    "label": "Use custom text",
+    "default": false
+      },
+    {
+    "type": "text",
+    "id": "footer_copyright_custom_text",
+    "label": "Custom text",
+    "default": "Enter custom text"
     },
     {
       "type": "select",
