@@ -30,7 +30,7 @@
         autocorrect="off"
         autocapitalize="off"
         autocomplete="email"
-        placeholder="{{ 'blocks.email_signup.placeholder' | t }}"
+        placeholder="{{ block_settings.placeholder }}"
         required
         {% if form.errors %}
           autofocus
@@ -322,8 +322,10 @@
   "tag": null,
   "settings": [
     {
-      "type": "paragraph",
-      "content": "t:content.email_signups_create_customer_profiles"
+      "type": "text",
+      "id": "placeholder",
+      "label": "Text for placeholder",
+      "default": "Enter your email"
     },
     {
       "type": "select",
