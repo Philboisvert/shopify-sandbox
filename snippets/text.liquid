@@ -87,14 +87,13 @@
     {{ fallback_text }}
   </div>
 {% elsif fallback_text != blank and product_sku != blank  %} 
-  <div {{ attributes }}>
-    <div class="product-title-with-sku">
-        {{ fallback_text }}
+    <div {{ attributes }}>
+       {{ fallback_text }}
     </div>
-    <div class="product-sku">
+    <div class="product-card-sku">
       {{ product_sku }}
     </div>
-  </div>
+  
 {% elsif plain_text != blank %}
   <{{ element }} {{ attributes }}>
     {{ block.settings.text }}

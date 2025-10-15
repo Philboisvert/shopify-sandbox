@@ -39,9 +39,13 @@
     assign price = price | money_without_trailing_zeros
     assign compare_at_price = compare_at_price | money_without_trailing_zeros
   endif
+
+  if show_compare_price
+    assign container_class = 'containerClass'
+  endif
 -%}
 
-<div ref="priceContainer">
+<div class={{ container_class }} ref="priceContainer">
   {% if show_sale_price_first == false and show_compare_price %}
     <span role="group">
       <span class="visually-hidden">{{ 'content.price_regular' | t }}&nbsp;</span>
@@ -50,10 +54,10 @@
   {% endif %}
 
   {% if show_compare_price %}
-    <span role="group">
-      <span class="visually-hidden">{{ 'content.price_sale' | t }}&nbsp;</span>
-      <span class="price compare_price">{{ price | default: '&nbsp;' }}</span>
-    </span>
+    <div role="group compare-price-group">
+      <div class="visually-hidden">{{ 'content.price_sale' | t }}&nbsp;</div>
+      <div class="price compare_price">{{ price | default: '&nbsp;' }}</div>
+    </div>
   {% else %}
     <span class="price">{{ price | default: '&nbsp;' }}</span>
   {% endif %}

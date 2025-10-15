@@ -280,6 +280,7 @@
               "type": "product-title",
               "name": "t:names.product_title",
               "settings": {
+                "showSku": true,
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
