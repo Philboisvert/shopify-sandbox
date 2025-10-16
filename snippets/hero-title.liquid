@@ -2,19 +2,29 @@
 <div class="hero-custom-title">
   {% if block.settings.title_1 != blank %}
     <div class="hero-title" style="
-      font-size: {{ block.settings.font_size }};
-      font-weight: {{ block.settings.font_weight }};
-      color: {{ block.settings.title_color_1 | default: '#000000' }};">
+      color: {{ block.settings.title_color_1 }};">
       {{ block.settings.title_1 }}
     </div>
   {% endif %}
 
   {% if block.settings.title_2 != blank %}
     <div  class="hero-title" style="
-      font-size: {{ block.settings.title_2_font_size | default: block.settings.font_size }};
-      font-weight: {{ block.settings.title_2_font_weight | default: block.settings.font_weight }};
-      color: {{ block.settings.title_color_2 | default: '#000000' }};">
+      color: {{ block.settings.title_color_2 }};">
       {{ block.settings.title_2 }}
     </div>
   {% endif %}
 </div>
+
+
+<style>
+.hero-custom-title .hero-title {
+  font-size: {{ block.settings.font_size_mobile }};
+  font-weight: {{ block.settings.font_weight }};
+
+   @media screen and (min-width: 750px) {
+
+    font-size: {{ block.settings.font_size }};
+  }
+
+}
+</style>
