@@ -2,10 +2,8 @@
 .hero-custom-title .hero-title {
   line-height: 43.2px;
   letter-spacing: -1.28px;
-}
 
-@media screen and (min-width: 750px) {
-  .hero-custom-title .hero-title {
+  @media screen and (min-width: 750px) {
     line-height: 57.6px;
     letter-spacing: −0.96px;
     margin: 0;
@@ -61,6 +59,9 @@
   display: flex;
   align-items: center;
   gap: 3px;
+  @media screen and (max-width: 750px) {
+    padding: 2px 7px;
+  }
 }
 
 /*
